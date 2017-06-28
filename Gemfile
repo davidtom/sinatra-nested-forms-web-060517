@@ -6,9 +6,10 @@ gem 'shotgun'
 gem 'pry'
 gem 'tux'
 gem 'require_all'
-
+gem 'selenium-webdriver'
 group :test do
   gem 'rspec'
+
   gem 'rack-test'
   gem 'capybara'
 end

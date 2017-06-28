@@ -1,1 +1,47 @@
-<h1>Make your form here</h1>
+<!-- <h1>Make your form here</h1> -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pirates</title>
+  </head>
+  <body>
+      I am here!!
+    <h1>Welcome to the Nested Forms Lab!</h1>
+    <h1>let's navigate to the '/new'</h1>
+    <h2>Enter Your Info:</h2>
+
+    <form action="/pirates" method="POST">
+      <!--  Pirate -->
+      <h3><label>Pirate Info:</label></h3>
+      <label>Pirate Name:</label><input type="text" name="pirate[name]"></input>
+      <label>Pirate Weight:</label><input type="text" name="pirate[weight]"></input>
+      <label>Pirate Height:</label><input type="text" name="pirate[height]"></input>
+      <!-- Ship1 -->
+      <h3><label>Ship 1 Info:</label></h3>
+      <label>Pirate Name:</label> <input type="text" id="ship_name_1" name="pirate[ships][][name]" ></input>
+      <label>Pirate Weight:</label> <input type="text" id="ship_type_1" name="pirate[ships][][type]"></input>
+      <label>Pirate Height:</label> <input type="text" id="ship_booty_1"name="pirate[ships][][booty]"></input>
+      <!--  Ship2 -->
+      <h3><label>Ship 2 Info:</label></h3>
+      <label>Pirate Name:</label> <input type="text" id="ship_name_2" name="pirate[ships][][name]"></input>
+      <label>Pirate Weight:</label> <input type="text" id="ship_type_2" name="pirate[ships][][type]"></input>
+      <label>Pirate Height:</label> <input type="text" id="ship_booty_2" name="pirate[ships][][booty]"></input>
+      <button  value="Submit" id="Submit">Submit</button>
+    </form>
+
+  </body>
+</html>
+
+
+
+<!-- Ship1 -->
+<!-- <h3><label>Ship 1 Info:</label></h3>
+<label>Pirate Name:</label> <input type="text" name="ship_name_1" name=ship></input>
+<label>Pirate Weight:</label> <input type="text" name="ship_type_1"></input>
+<label>Pirate Height:</label> <input type="text" name="ship_booty_1"></input> -->
+<!--  Ship2 -->
+<!-- <h3><label>Ship 2 Info:</label></h3>
+<label>Pirate Name:</label> <input type="text" name="ship_name_2"></input>
+<label>Pirate Weight:</label> <input type="text" name="ship_type_2"></input>
+<label>Pirate Height:</label> <input type="text" name="ship_booty_2"></input> -->
